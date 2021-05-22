@@ -31,6 +31,15 @@ body {
     text-shadow: 1px 1px black;
 }
 
+img {
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: rotate(30deg);
+}
+
 .container { /* Seleciona o container do HTML */
     max-width: 720px;  /* Define a largura máxima do container */
     margin: 50px auto; /* Define a distância da margem do topo da página */
@@ -49,6 +58,7 @@ form input, form label, form button { /* Seleciona todos os elementos do formul�
     padding: 8px;
     text-align: center;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
 form input {
@@ -56,10 +66,12 @@ form input {
     height: 50px;
     margin-top: 0px;
     border: 2.5px solid;
+    opacity: 0.6;
 }
 
 form input:hover {
     box-shadow: 8px 8px 13px 0px;
+    opacity: 1;
 }
 
 form button {
@@ -67,7 +79,8 @@ form button {
     border-radius: 8px;
     background: var(--primary-color-darker);
     color: #ffffff;
-    font-size: 18px;
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
     font-weight: 700;
     height: 50px;
     cursor: pointer; /* Uma "mãozinha fica em cima do botão quando é selecionado" */
@@ -88,6 +101,11 @@ form button:active { /* Quando clica com mouse no botão */
     padding: 10px 20px;
     border-radius: 8px;
     border: 1px solid black;
+    transition: 0.3s;
+}
+
+.paragrafo-resultado:hover, .bad:hover {
+    box-shadow: 8px 8px 13px 0px;
 }
 
 .bad {
@@ -111,6 +129,10 @@ form button:active { /* Quando clica com mouse no botão */
     top: 40px;
     font-size: 25px;
 }
+
+select {
+    font-family: 'Open sans', sans-serif;
+}
   
 .box select {
     text-align: center;
@@ -121,8 +143,9 @@ form button:active { /* Quando clica com mouse no botão */
     border: 1px solid #000000;
     border-radius: 5px 5px 5px 5px;
     font-size: 21px;
-    box-shadow: 4px 6px 11px 0px rgb(0 0 0);
     text-align-last: center;
+    transition: 0.3s;
+    box-shadow: 4px 6px 11px 0px rgb(0 0 0);
 }
 
 .box select:hover {
