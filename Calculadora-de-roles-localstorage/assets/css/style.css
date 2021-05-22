@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); /* Seleciona uma fonte da API do Google */
+
+:root {
+    /* Cria uma variável global para colocar a cor do background */
+    --primary-color: rgb(10, 126, 227); 
+    --primary-color-hover: rgb(11, 0, 172);
+    --primary-color-darker: rgb(30, 83, 255);
+    --primary-color-more-darker: rgb(0, 24, 104);
+}
+
+* { /* O * serve para selecionar todos os elementos da página */
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color); /* Utiliza a variável criada */
+    font-family: 'Open sans', sans-serif; /* Utiliza a fonte do link. Caso não exista a primeira, uma segunda é selecionada */
+    font-size: 1.2em; /* Tamanho da fonte */
+    line-height: 1.5em; /* Altura da linha */
+}
+
+a {
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.h1:hover {
+    text-shadow: 1px 1px black;
+}
+
+.h1 img {
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.h1 img:hover {
+    transform: rotate(30deg);
+}
+
+.container { /* Seleciona o container do HTML */
+    max-width: 720px;  /* Define a largura máxima do container */
+    margin: 50px auto; /* Define a distância da margem do topo da página */
+    background: #ffffff;
+    padding: 20px; /* Define a distância entre o conteúdo de um elemento e suas bordas */
+    border-radius: 8px; /* Arredonda a borda do container */
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 8px 8px 13px 0px;
+}
+
+form input, form label, form button { /* Seleciona todos os elementos do formulário */
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    margin-top: 0px;
+    border: 2.5px solid;
+    opacity: 0.6;
+}
+
+form input:hover {
+    box-shadow: 8px 8px 13px 0px;
+    opacity: 1;
+}
+
+form button {
+    border: 1px solid black;
+    border-radius: 8px;
+    background: var(--primary-color-darker);
+    color: #ffffff;
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer; /* Uma "mãozinha fica em cima do botão quando é selecionado" */
+    margin-top: 10px;
+    box-shadow: 4px 6px 11px 0px rgb(0 0 0);
+}
+
+form button:hover { /* Quando passa o mouse em cima do botão */
+    background: var(--primary-color-hover);
+}
+
+form button:active { /* Quando clica com mouse no botão */
+    background: var(--primary-color-more-darker);
+}
+
+#disclaimer {
+    font-style: oblique;
+    font-size: 15px;
+    margin-top: 10px;
+    color:rgba(53, 53, 53, 0.685);
+}
+
+.unit { 
+    position: relative; 
+    display: block; 
+    left: 10px; 
+    top: 40px;
+    font-size: 25px;
+}
+
+select {
+    font-family: 'Open sans', sans-serif;
+}
+  
+.box select {
+    text-align: center;
+    background-color:var(--primary-color-darker);
+    color: white;
+    width: 275px;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 21px;
+    text-align-last: center;
+    transition: 0.3s;
+    box-shadow: 4px 6px 11px 0px rgb(0 0 0);
+}
+
+.box select:hover {
+    background: var(--primary-color-hover);
+}
+
+.bares {
+    display: inline-block;
+    width: 50%;
+    max-width: 50%;
+    height: 250px;
+    margin-top: 8px;
+    
+}
+
+.dia {
+    display: inline-block;
+    margin-left: 10px;
+    max-width: 50%;
+    height: 250px;
+    margin-top: 8px;
+    border-top: 1px solid;
+}
+
+.baladas {
+    display: inline-block;
+    margin-left: 10px;
+    max-width: 50%;
+    height: 250px;
+    margin-top: 8px;
+}
+
+.sede {
+    display: inline-block;
+    width: 50%;
+    max-width: 50%;
+    height: 250px;
+    margin-top: 30px;
+    border-top: 1px solid;
+}
+
+#total-role {
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: 0.3s;
+    margin: 1em auto;
+    width: 40%;
+    color: white;
+}
+
+#total-role:hover {
+    box-shadow: 8px 8px 13px 0px black;
+}

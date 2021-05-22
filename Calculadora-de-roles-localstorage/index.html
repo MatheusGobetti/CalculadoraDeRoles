@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Rolês</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="h1">Calculadora de Rolês
+            <img src="../Calculadora-de-roles/assets/img/cerveja.svg" height="50" width="50" alt="cerveja" />
+        </h1>
+
+
+        <form action="/" id="formulario" method="POST">
+            <div class="box">
+
+                <div class="bares">
+                    <label for="NB">Número de bares que quero ir:</label>
+                    <input type="number" id="NB" name="NB" min="0" placeholder="0">
+
+
+                    <label for="NIB">Nível dos bares que quero ir:</label>
+                    <select name="BarsLevel" id="NIB">
+                        <option value="1.1">Litrão da Esquina</option>
+                        <option value="1.5">Gim Tônica do Centro</option>
+                        <option value="2.2">Rooftop</option>
+                    </select>
+                </div>
+
+                <div class="baladas">
+                    <label for="NBA">Número de baladas que quero ir:</label>
+                    <input type="number" id="NBA" name="NBA" min="0" placeholder="0">
+
+                    <label for="NIBA">Nível da baladas que quero ir:</label>
+                    <select name="BaladasLevel" id="NIBA">
+                        <option value="2">Padrão</option>
+                        <option value="3">Rei do Camarote</option>
+                    </select>
+                </div>
+
+                <div class="sede">
+                    <label for="NIS">Nível de sede do rolê:</label>
+                    <select name="SedeLevel" id="NIS">
+                        <option value="1">Social</option>
+                        <option value="1.6">Comemoração</option>
+                        <option value="2.5">Esquecer Ex</option>
+                    </select>
+
+                    <label for="KM">Quilômetros rodados de Uber:</label>
+                    <input type="number" id="KM" name="KM" step=".01" min="0" placeholder="0km">
+                </div>
+
+                <div class="dia">
+                    <label for="D">Dia do rolê:</label>
+                    <select name="DiaRole" id="D">
+                        <option value="1">Dia de Semana</option>
+                        <option value="1.4">Sexta</option>
+                        <option value="1.6">Sábado</option>
+                        <option value="1.2">Domingo</option>
+                    </select>
+
+                    <label for="O">Outros gastos:</label>
+                    <input type="number" id="O" name="O" step=".01" min="0" placeholder="R$">
+                </div>
+            </div>
+
+            <input type='file' id="imagemUsuario" />
+            <button type="submit" onclick="location.href='resultado.html'">CALCULAR!</button>
+            <div id="resultado"></div>
+        </form>
+        <div id="disclaimer">
+            <label for="lembrete">Lembre-se de não botar as mãos no volante!</label>
+        </div>
+
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
