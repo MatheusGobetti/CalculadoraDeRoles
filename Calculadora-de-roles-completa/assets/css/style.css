@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); /* Seleciona uma fonte da API do Google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); 
 
 :root {
-    /* Cria uma variável global para colocar a cor do background */
     --primary-color: rgb(10, 126, 227); 
     --primary-color-hover: rgb(11, 0, 172);
     --primary-color-darker: rgb(30, 83, 255);
     --primary-color-more-darker: rgb(0, 24, 104);
 }
 
-* { /* O * serve para selecionar todos os elementos da página */
+* { 
     box-sizing: border-box;
     outline: 0;
 }
@@ -16,10 +15,10 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--primary-color); /* Utiliza a variável criada */
-    font-family: 'Open sans', sans-serif; /* Utiliza a fonte do link. Caso não exista a primeira, uma segunda é selecionada */
-    font-size: 1.2em; /* Tamanho da fonte */
-    line-height: 1.5em; /* Altura da linha */
+    background: var(--primary-color); 
+    font-family: 'Open sans', sans-serif; 
+    font-size: 1em; 
+    line-height: 1.5em; 
 }
 
 a {
@@ -32,7 +31,7 @@ a:link {
 
 .h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .h1:hover {
@@ -48,12 +47,12 @@ a:link {
     transform: rotate(30deg);
 }
 
-.container { /* Seleciona o container do HTML */
-    max-width: 720px;  /* Define a largura máxima do container */
-    margin: 50px auto; /* Define a distância da margem do topo da página */
+.container { 
+    max-width: 60%;  
+    margin: 50px auto; 
     background: #ffffff;
-    padding: 20px; /* Define a distância entre o conteúdo de um elemento e suas bordas */
-    border-radius: 8px; /* Arredonda a borda do container */
+    padding: 20px;
+    border-radius: 8px; 
     text-align: center;
     border: 2px solid;
     box-shadow: 8px 8px 13px 0px;
@@ -70,7 +69,7 @@ form input, form label, form button { /* Seleciona todos os elementos do formul�
 }
 
 form input {
-    font-size: 24px;
+    font-size: 1.2em;
     height: 50px;
     margin-top: 0px;
     border: 2.5px solid;
@@ -88,19 +87,19 @@ form button {
     background: var(--primary-color-darker);
     color: #ffffff;
     font-family: 'Open sans', sans-serif;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 700;
     height: 50px;
-    cursor: pointer; /* Uma "mãozinha fica em cima do botão quando é selecionado" */
+    cursor: pointer; 
     margin-top: 30px;
     box-shadow: 4px 6px 11px 0px rgb(0 0 0);
 }
 
-form button:hover { /* Quando passa o mouse em cima do botão */
+form button:hover { 
     background: var(--primary-color-hover);
 }
 
-form button:active { /* Quando clica com mouse no botão */
+form button:active { 
     background: var(--primary-color-more-darker);
 }
 
@@ -113,18 +112,18 @@ form button:active { /* Quando clica com mouse no botão */
     font-size: 20px;
     font-weight: 700;
     height: 50px;
-    cursor: pointer; /* Uma "mãozinha fica em cima do botão quando é selecionado" */
-    margin-top: 30px;
+    cursor: pointer; 
+    margin-top: 10px;
     box-shadow: 4px 6px 11px 0px rgb(0 0 0);
     width: 100%;
 }
 
- #voltar:hover { /* Quando passa o mouse em cima do botão */
+ #voltar:hover {
     background: var(--primary-color-hover);
     transition: 0.3s;
 }
 
-#voltar:active { /* Quando clica com mouse no botão */
+#voltar:active {
     background: var(--primary-color-more-darker);
 }
 
@@ -140,7 +139,7 @@ form button:active { /* Quando clica com mouse no botão */
     display: block; 
     left: 10px; 
     top: 40px;
-    font-size: 25px;
+    font-size: 1.3em;
 }
 
 select {
@@ -151,11 +150,11 @@ select {
     text-align: center;
     background-color:var(--primary-color-darker);
     color: white;
-    width: 275px;
+    width: 75%;
     padding: 12px;
     border: 1px solid #000000;
     border-radius: 5px 5px 5px 5px;
-    font-size: 21px;
+    font-size: 1.2em;
     text-align-last: center;
     transition: 0.3s;
     box-shadow: 4px 6px 11px 0px rgb(0 0 0);
@@ -167,42 +166,43 @@ select {
 
 .bares {
     display: inline-block;
-    width: 50%;
+    width: 45%;
     max-width: 50%;
     height: 250px;
     margin-top: 8px;
+    padding: 10px;
     
 }
 
 .dia {
     display: inline-block;
-    margin-left: 10px;
+    width: 45%;
     max-width: 50%;
     height: 250px;
-    margin-top: 8px;
-    border-top: 1px solid;
+    margin-top: 30px;
+    padding: 10px;
 }
 
 .baladas {
     display: inline-block;
-    margin-left: 10px;
+    width: 45%;
     max-width: 50%;
     height: 250px;
     margin-top: 8px;
+    padding: 10px;
 }
 
 .sede {
     display: inline-block;
-    width: 50%;
+    width: 45%;
     max-width: 50%;
     height: 250px;
     margin-top: 30px;
-    border-top: 1px solid;
+    padding: 10px;
 }
 
 .orc {
     display: inline-block;
-    margin-left: 10px;
     height: 200px;
     margin-top: 8px;
 }
@@ -238,7 +238,7 @@ select {
 
 #cara-role {
     display: inline-block;
-    width: 330px;
+    width: 45%;
 }
 
 #cara-role img {

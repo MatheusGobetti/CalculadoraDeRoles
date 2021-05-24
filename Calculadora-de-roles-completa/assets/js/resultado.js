@@ -1,12 +1,11 @@
+let mensagemTexto = localStorage.getItem("mykey");
+let orcamento = localStorage.getItem("mykey2");
+let valorTotalRole = Number(localStorage.getItem("mykey3"));
+let filename = String(localStorage.getItem("mykey4"));
+
 document.getElementById("total-role").innerHTML = localStorage.getItem("mykey");
 
-mensagemTexto = localStorage.getItem("mykey");
-orcamento = localStorage.getItem("mykey2");
-valorTotalRole = Number(localStorage.getItem("mykey3"));
-filename = String(localStorage.getItem("mykey4"));
-
-let path = filename;
-let fotoRole = path.replace(/^.*\\/, "");
+let fotoRole = filename.replace(/^.*\\/, "");
 
 if(localStorage.getItem("mykey4") == "") {
   localStorage.setItem("mykey4", "https://source.unsplash.com/collection/1484593/338x191");
@@ -28,34 +27,24 @@ if(localStorage.getItem("mykey4") == "") {
 
 }
 
-function criaDiv(className) {
-  // Cria uuma div
+function criaDiv() {
   const div = document.createElement('div'); 
   return div;
 }
 
-// Nesta função, o que for enviado de texto será adicionado na div resultado
 function setOrcamento(orcamento, isValid){
-  // Capturar evento do resultado no HTML
   const resultado = document.querySelector('#orcamento-role');;
-  // Limpa o que estiver dentro da variável resultado
   resultado.innerHTML = '';
-  // Coloca a função criaParagrafo em uma função 'p'
+
   const div = criaDiv();
-  // Trocando a cor do fundo buscando a classe criada no CSS de acordo com a validez 
+
   if (isValid) {
       div.classList.add('paragrafo-resultado');
   } else {
       div.classList.add('bad');
   }
-  // Colocando o parágrafo com a mensagem do resultado no HTML
   div.innerHTML = orcamento;
-  // Inserir o elemento 'p' na div 
   resultado.appendChild(div);
-}
-
-function fazImagem() {
-  
 }
 
 function validacao() {
